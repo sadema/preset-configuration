@@ -17,8 +17,8 @@ public class PresetConfigurationApplication {
     @Bean
     CommandLineRunner getTitle(PresetService presetService) {
         return args -> {
-            log.info("Title: {}, TitleLong: {}", presetService.getTitle(0), presetService.getTitleLong(0));
-            log.info("Title: {}, TitleLong: {}", presetService.getTitle(1), presetService.getTitleLong(1));
+            log.info("BackgroundColor: {}, TitleAlignment: {}", presetService.getBackgroundColor(0), presetService.getTitleAlignment(0));
+            log.info("BackgroundColor: {}, TitleAlignment: {}", presetService.getBackgroundColor(1), presetService.getTitleAlignment(1));
         };
     }
 }

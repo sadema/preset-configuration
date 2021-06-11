@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 public class Teaser {
     @JsonIgnore
     private String id;
-    private String title = "bla";
+    private String title = "";
     private boolean copyArticleTitle = false;
     private String titleLong = "";
+    private String titleAlignment = "LEFT";
+    private String backgroundColor = "#FFFFFF";
 }

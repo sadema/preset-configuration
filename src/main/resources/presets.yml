@@ -1,6 +1,8 @@
-presets:
-  baseValues:
+ste:
+  presets:
     - id: "net.persgroep.brand.vk"
-      titleLong: "blabla"
+      fallbackPresetId: "169708bf-0e37-4901-ad8c-a09344f5b628"
     - id: "net.persgroep.brand.libelle"
-      titleLong: "foofoo"
+      baseValues:
+        titleAlignment: "CENTER"
+        backgroundColor: "#FFF4EA"

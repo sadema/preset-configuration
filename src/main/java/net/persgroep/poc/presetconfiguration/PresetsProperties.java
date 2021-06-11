@@ -9,11 +9,12 @@ import java.util.List;
 
 @Configuration
 @ConfigurationProperties(
-        prefix = "presets"
+        prefix = "ste"
 )
 @PropertySource(value = "classpath:presets.yml", factory = YamlPropertySourceFactory.class)
 @Data
-public class PresetProperties {
+public class PresetsProperties {
 
-    private List<Teaser> baseValues;
+    private List<Presets> presets;
+
 }

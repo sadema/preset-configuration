@@ -7,14 +7,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class PresetService {
 
-    private final PresetProperties presetProperties;
+    private final PresetsProperties presetsProperties;
 
-    public String getTitle(int i) {
-        return presetProperties.getBaseValues().get(i).getTitle();
+    public String getBackgroundColor(int i) {
+        return presetsProperties.getPresets().get(i).getBaseValues().getBackgroundColor();
     }
 
-    public String getTitleLong(int i) {
-        return presetProperties.getBaseValues().get(i).getTitleLong();
+    public String getTitleAlignment(int i) {
+        return presetsProperties.getPresets().get(i).getBaseValues().getTitleAlignment();
     }
 
 }

@@ -1,12 +1,11 @@
 package net.persgroep.poc.presetconfiguration;
 
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-@Getter
+@Data
 @NoArgsConstructor
 public class Presets {
-    private List<Teaser> baseValues;
+    private Teaser baseValues = new Teaser();
+    private String fallbackPresetId = "169708bf-0e37-4901-ad8c-a09344f5b628";
 }
