@@ -9,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 @ConfigurationProperties(
         prefix = "preset"
 )
-@PropertySource(value = "classpath:preset.yml", factory = YamlPropertySourceFactory.class)
+@PropertySource(value = "classpath:presets.yml", factory = YamlPropertySourceFactory.class)
 @Data
 public class PresetConfiguration {
 

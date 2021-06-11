@@ -17,7 +17,7 @@ public class PresetConfigurationApplication {
     @Bean
     CommandLineRunner getTitle(PresetService presetService) {
         return args -> {
-            log.info("Title: {}", presetService.getTitle());
+            log.info("Title: {}, TitleLong: {}", presetService.getTitle(), presetService.getTitleLong());
         };
     }
 }

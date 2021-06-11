@@ -13,4 +13,8 @@ public class PresetService {
         return presetConfiguration.getBaseValues().getTitle();
     }
 
+    public String getTitleLong() {
+        return presetConfiguration.getBaseValues().getTitleLong();
+    }
+
 }

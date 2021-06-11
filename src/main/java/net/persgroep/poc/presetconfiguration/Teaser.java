@@ -6,5 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Teaser {
-    private String title;
+    private String title = "bla";
+    private boolean copyArticleTitle = false;
+    private String titleLong;
 }
