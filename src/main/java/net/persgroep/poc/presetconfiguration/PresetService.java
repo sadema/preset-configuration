@@ -7,14 +7,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class PresetService {
 
-    private final PresetConfiguration presetConfiguration;
+    private final PresetProperties presetProperties;
 
-    public String getTitle() {
-        return presetConfiguration.getBaseValues().getTitle();
+    public String getTitle(int i) {
+        return presetProperties.getBaseValues().get(i).getTitle();
     }
 
-    public String getTitleLong() {
-        return presetConfiguration.getBaseValues().getTitleLong();
+    public String getTitleLong(int i) {
+        return presetProperties.getBaseValues().get(i).getTitleLong();
     }
 
 }

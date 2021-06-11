@@ -1,3 +1,6 @@
-preset:
+presets:
   baseValues:
-    titleLong: "blabla"
+    - id: "net.persgroep.brand.vk"
+      titleLong: "blabla"
+    - id: "net.persgroep.brand.libelle"
+      titleLong: "foofoo"

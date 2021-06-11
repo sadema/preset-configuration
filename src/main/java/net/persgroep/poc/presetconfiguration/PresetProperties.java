@@ -5,13 +5,15 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
+import java.util.List;
+
 @Configuration
 @ConfigurationProperties(
-        prefix = "preset"
+        prefix = "presets"
 )
 @PropertySource(value = "classpath:presets.yml", factory = YamlPropertySourceFactory.class)
 @Data
-public class PresetConfiguration {
+public class PresetProperties {
 
-    private Teaser baseValues;
+    private List<Teaser> baseValues;
 }
