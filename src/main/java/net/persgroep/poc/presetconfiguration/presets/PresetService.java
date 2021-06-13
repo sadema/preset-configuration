@@ -1,6 +1,7 @@
-package net.persgroep.poc.presetconfiguration;
+package net.persgroep.poc.presetconfiguration.presets;
 
 import lombok.RequiredArgsConstructor;
+import net.persgroep.poc.presetconfiguration.configuration.PresetsProperties;
 import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor

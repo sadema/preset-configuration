@@ -1,4 +1,4 @@
-package net.persgroep.poc.presetconfiguration;
+package net.persgroep.poc.presetconfiguration.presets;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package net.persgroep.poc.presetconfiguration;
+package net.persgroep.poc.presetconfiguration.configuration;
 
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.core.env.PropertiesPropertySource;

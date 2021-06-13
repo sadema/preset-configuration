@@ -2,7 +2,22 @@ ste:
   presets:
     - id: "net.persgroep.brand.vk"
       fallbackPresetId: "169708bf-0e37-4901-ad8c-a09344f5b628"
+      preset:
+        - id: "57ac4390-8f24-4c25-a066-447d12976855"
+          sectionName: "Columns"
+          name: "Column Aaf Brandt Corstius"
+          values:
+            subLabel: "AAF BRANDT CORSTIUS"
+            imagesByEnv:
+              - env: acc
+                imageId: 200460116
+              - env: prod
+                imageId: 111111111
     - id: "net.persgroep.brand.libelle"
       baseValues:
         titleAlignment: "CENTER"
         backgroundColor: "#FFF4EA"
+      preset:
+        - id: "169708bf-0e37-4901-ad8c-a09344f5b631"
+          sectionName: "Basis"
+          name: "Basic Teaser"

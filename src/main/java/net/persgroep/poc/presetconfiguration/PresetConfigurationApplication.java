@@ -1,6 +1,7 @@
 package net.persgroep.poc.presetconfiguration;
 
 import lombok.extern.slf4j.Slf4j;
+import net.persgroep.poc.presetconfiguration.presets.PresetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
