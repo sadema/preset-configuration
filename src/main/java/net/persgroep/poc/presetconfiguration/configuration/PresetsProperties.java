@@ -25,21 +25,9 @@ public class PresetsProperties {
     private String activeProfile;
 
     @Autowired
-    private ImageFactory imageFactory;
+    private ImageSelector imageSelector;
 
     private List<Presets> presets;
-
-//    @Profile("prod")
-//    @Bean
-//    ImageFactory createImageFactoryForProd() {
-//        return new ImageFactory("prod");
-//    }
-//
-//    @Profile("!prod")
-//    @Bean
-//    ImageFactory createImageFactoryForAcc() {
-//        return new ImageFactory("acc");
-//    }
 
     @PostConstruct
     private void setImageForEnv() {
@@ -49,8 +37,7 @@ public class PresetsProperties {
                 .filter(it -> it.getValues() != null)
                 .map(it -> it.getValues())
                 .forEach(it -> {
-                    imageFactory.setImage(it, activeProfile);
-//                    log.info("set image for");
+                    imageSelector.setImage(it, activeProfile);
                 });
 
     }
